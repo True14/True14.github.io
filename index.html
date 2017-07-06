@@ -4,31 +4,40 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>J. Random Hacker</title>
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
         <header>
+          <div  class="header-container">
             <h1>J. Random Hacker</h1>
             <nav class="main-nav">
-                <ul>
+                <ul class=flex-grid>
                     <li class="main-nav-link"><a href="#about">About me</a></li>
                     <li class="main-nav-link"><a href="#work">My work</a></li>
                     <li class="main-nav-link"><a href="#contact">Contact me</a></li>
                 </ul>
             </nav>
+          </div>
+          <div class="header-image">
+           <img src="./img/aleksandr-kozlovskii-2928.jpg" alt="">
+          </div>
+          <div class="header-about">
+            <h2>About Me</h2>
+              <img class="headshot" src="http://unsplash.it/150/150"
+                  alt="J. Random Hacker headshot">
 
-            <img class="headshot" src="http://unsplash.it/150/150"
-                alt="J. Random Hacker headshot">
+              <p class="about" id="about">
+                  Hi, I'm J. Random Hacker, a full-stack web developer from Nowheresville, USA.  I use React and Node.js to build web apps which leave you with a minty fresh taste in your mouth.  Outside of coding I enjoy watching <a href="https://www.youtube.com/watch?v=6SFNW5F8K9Y">this video</a> on repeat.
+              </p>
+              <!-- <nav class="contact-links">
+                  <ul>
+                      <li class="contact-link contact-link-email"><a href="mailto:jrandomhacker@example.com">Email</a>
+                      <li class="contact-link contact-link-linkedin"><a href="https://www.linkedin.com">LinkedIn</a>
+                      <li class="contact-link contact-link-github"><a href="https://www.github.com">GitHub</a>
+                  </ul>
+              </nav> -->
+          </div>
 
-            <p class="about" id="about">
-                Hi, I'm J. Random Hacker, a full-stack web developer from Nowheresville, USA.  I use React and Node.js to build web apps which leave you with a minty fresh taste in your mouth.  Outside of coding I enjoy watching <a href="https://www.youtube.com/watch?v=6SFNW5F8K9Y">this video</a> on repeat.
-            </p>
-            <nav class="contact-links">
-                <ul>
-                    <li class="contact-link contact-link-email"><a href="mailto:jrandomhacker@example.com">Email</a>
-                    <li class="contact-link contact-link-linkedin"><a href="https://www.linkedin.com">LinkedIn</a>
-                    <li class="contact-link contact-link-github"><a href="https://www.github.com">GitHub</a>
-                </ul>
-            </nav>
         </header>
         <section class="work" id="work">
             <h2>My work</h2>
@@ -151,7 +160,7 @@
         </section>
         <section class="contact" id="contact">
             <h2>Contact me</h2>
-            <form action="https://formspree.io/jrandomhacker@example.com"
+            <!-- <form action="https://formspree.io/jrandomhacker@example.com"
                   method="POST">
                 <label for="contact-form-name">Your Name</label>
                 <input type="text" name="name" id="contact-form-name" placeholder="Grace Hopper">
@@ -160,7 +169,7 @@
                 <label for="contact-form-message">Message</label>
                 <textarea name="message" id="contact-form-message"></textarea>
                 <input type="submit" value="Send message">
-            </form> 
+            </form> -->
         </section>
     </body>
 </html>
