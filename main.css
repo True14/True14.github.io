@@ -7,6 +7,7 @@ body {
   color: #555;
   text-align: center;
   min-width: 300px;
+  font-size: 22px;
 }
 
 h1,
@@ -20,10 +21,17 @@ h6 {
   padding-top: 1em;
 }
 
-h1,
+
+
+
+/*h1,
 h2,
 strong {
   color: #333;
+}*/
+
+h2 {
+  color: #77B792
 }
 
 ul {
@@ -67,14 +75,19 @@ ul {
   padding-bottom: 0.5em;
   font-size: 22px;
   color: #348AA7;
+  flex:1;
 }
 .contact-link > a {
   color: #348AA7;
 }
-.header-about {
-  margin-top: 190px;
+.header-about, .work {
+  padding-top: 190px;
 }
 
+.work {
+  padding-top: 190px;
+  margin-top: -190px;
+}
 .project {
   color: white;
   padding-bottom: 5px;
@@ -127,11 +140,22 @@ ul {
   display: flex;
 }
 
-.col {
-  flex: 1;
-}
+
 
 @media (min-width: 700px) {
+  h1 {
+    font-size: 38px;
+  }
+
+  .header-about, .work {
+    padding-top: 120px;
+  }
+
+  .work {
+    padding-top: 120px;
+    margin-top: -120px;
+  }
+
   .flex-doubles {
     display: flex;
     width: 75%;
@@ -143,5 +167,25 @@ ul {
 
   .flex-doubles .project {
     width: 48%;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  .header-container {
+    flex: 1;
+  }
+
+  .main-nav {
+    display: block;
+    width: 50%;
+  }
+
+  .main-nav > ul {
+    margin-top: 0;
+    padding-top: 44px;
   }
 }
