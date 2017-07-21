@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>J. Random Hacker</title>
+  <title>Jonathan Fitzgibbon</title>
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
@@ -12,8 +12,14 @@
 <body>
   <header>
     <div class="header-container">
-      <a  href="#welcome">J.</a>
-      <nav class="main-nav">
+          <!-- Hamburger button -->
+      <div class="hamburger">
+        <div class="hamburger-stripe"></div>
+        <div class="hamburger-stripe"></div>
+        <div class="hamburger-stripe"></div>
+      </div>
+      <a  href="#welcome"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
+      <nav class="main-nav hidden">
         <ul>
           <li class=" main-nav-link"><a href="#about">About me</a></li>
           <li class=" main-nav-link"><a href="#work">My work</a></li>
@@ -21,6 +27,13 @@
         </ul>
       </nav>
     </div>
+    <nav class="drop-nav hidden">
+      <ul>
+        <li class=" drop-nav-link"><a href="#about">About me</a></li>
+        <li class=" drop-nav-link"><a href="#work">My work</a></li>
+        <li class=" drop-nav-link"><a href="#contact">Contact me</a></li>
+      </ul>
+    </nav>
   </header>
   <a id="welcome"></a>
   <section class="welcome">
@@ -33,7 +46,7 @@
     <h2>About Me</h2>
     <div class="flex-doubles">
       <figure class="col pro-odd headshot-container">
-        <img class=" headshot" src="http://unsplash.it/150/150" alt="J. Random Hacker headshot">
+        <img class=" headshot" src="./images/me.jpg" alt="J. Random Hacker headshot">
       </figure>
       <article class="col pro-even about-container">
         <p class="about-text">
@@ -170,27 +183,28 @@
     <nav class="contact-links">
       <ul class="flex-grid-triples">
         <li class="col">
-          <a class="email" href="mailto:jrandomhacker@example.com"><i class="fa fa-envelope fa-2x contact-link contact-link-email"></i></a>
+          <a class="email" href="mailto:jonnyfitzgib@gmail.com" target='_blank'>
+            <i class="fa fa-envelope fa-2x contact-link contact-link-email"></i>
+          </a>
         </li>
         <li class="col">
-          <a class="linkedin" href="https://www.linkedin.com"><i class="fa fa-linkedin fa-2x contact-link contact-link-linkedin"></i></a>
+          <a class="linkedin" href="https://www.linkedin.com/in/jonathan-fitzgibbon-3433baa1/" target='_blank'>
+            <i class="fa fa-linkedin fa-2x contact-link contact-link-linkedin"></i>
+          </a>
         </li>
         <li class="col">
-          <a class="github" href="https://www.github.com"><i class=" fa fa-github fa-2x contact-link contact-link-github"></i></a>
+          <a class="github" href="https://www.github.com/True14" target='_blank'>
+            <i class=" fa fa-github fa-2x contact-link contact-link-github"></i>
+          </a>
         </li>
       </ul>
     </nav>
-    <!-- <form action="https://formspree.io/jrandomhacker@example.com"
-                  method="POST">
-                <label for="contact-form-name">Your Name</label>
-                <input type="text" name="name" id="contact-form-name" placeholder="Grace Hopper">
-                <label for="contact-form-email">Your Email Address</label>
-                <input type="email" name="_replyto" id="contact-form-email" placeholder="grace@example.com">
-                <label for="contact-form-message">Message</label>
-                <textarea name="message" id="contact-form-message"></textarea>
-                <input type="submit" value="Send message">
-            </form> -->
   </section>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script> $(".hamburger").click(function() {
+  $(".drop-nav").toggleClass("hidden");
+})
+</script>
 </body>
 
 </html>

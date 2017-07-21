@@ -46,40 +46,68 @@ ul {
 .header-container > a {
   padding: 10px 15px;
   float:left;
+  color: #4FB0C6;
 }
 
+.welcome {
+  background-size: cover;
+  height: 450px;
+  background-image: url('../images/kalen-emsley-100238.jpg');
+}
 .welcome > h1 {
   color: #348AA7;
   font-size: 28px;
-  margin-top: 0;
+  margin-top: 15%;
   padding-top: 0;
 }
 
-.main-nav > ul {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 0;
-  padding-top: 0;
-  margin-bottom: 0;
-  float: right;
+.drop-nav {
+  width: 100%;
+  position: fixed;
+  top: 55px;
+  left: 0;
+  background-color: white;
 }
 
-.main-nav-link {
+.drop-nav > ul {
   float: left;
-  display: block;
-}
-.main-nav-link > a{
-  text-decoration: none;
-  color: black;
-  padding:10px 15px 0px;
-  display: block;
+  width: 100%;
+  margin-top: 8px;
 }
 
-.main-nav-link > a:hover{
-  border-bottom: 1px solid #348AA7;
-  padding-bottom: 2px;
-  font-size: 22px;
-  color: #348AA7;
+.drop-nav-link {
+  border-bottom: 1px solid black;
+  padding-left: 10px;
+  text-align: left;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+
+.drop-nav-link > a {
+  text-decoration: none;
+  color: #24515B;
+}
+
+.hidden {
+  display: none;
+}
+
+.hamburger {
+    width: 25px;
+    height: 20px;
+    border: 1px solid #eeeeef;
+    border-radius: 2px;
+    box-shadow: 0 0 2px #eeeeef;
+    padding: 10px 10px;
+    position: absolute;
+    top:5px;
+    right: 10px;
+}
+
+.hamburger-stripe {
+    background-color: #24515B;
+    height: 3px;
+    margin-bottom: 5px;
 }
 
 .contact-link > a {
@@ -96,6 +124,7 @@ ul {
   height: 350px;
   border-radius: 15% 40% 15%;
   margin: 0 auto;
+  min-width: 250px;
 }
 
 .about-container {
@@ -185,6 +214,45 @@ ul {
   }
 }
 
+@media (min-width: 400px) {
+
+  .hamburger, .drop-nav {
+    display: none;
+  }
+
+  .main-nav {
+    display: block;
+    padding-top: 10px;
+  }
+
+  .main-nav > ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    float: right;
+  }
+
+  .main-nav-link {
+    float: left;
+    display: block;
+  }
+  .main-nav-link > a{
+    text-decoration: none;
+    color: black;
+    padding:10px 15px 0px;
+    display: block;
+  }
+
+  .main-nav-link > a:hover{
+    border-bottom: 1px solid #348AA7;
+    padding-bottom: 2px;
+    font-size: 22px;
+    color: #348AA7;
+  }
+}
+
 @media (min-width: 700px) {
   .welcome > h1 {
     font-size: 38px;
@@ -228,6 +296,8 @@ ul {
   .about-text {
     padding-left: 1em;
   }
+
+
 
 
 }
