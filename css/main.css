@@ -1,13 +1,19 @@
 body {
   margin: 0 auto;
-  max-width: 75em;
+  /*max-width: 75em;*/
   font-family: "Helvetica", "Arial", sans-serif;
   line-height: 1.5;
-  padding: 1em;
+  /*padding: 1em;*/
   color: #555;
   text-align: center;
   min-width: 300px;
   font-size: 16px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 95em;
+  padding: 1em;
 }
 
 h1,
@@ -22,7 +28,7 @@ h6 {
 }
 
 h2 {
-  color: #77B792
+  color: #184EE8
 }
 
 ul {
@@ -35,29 +41,42 @@ ul {
   top: 0px;
   left: 0;
   right:0;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 0px;
   background-color: white;
   margin:0 auto;
   border-bottom: 1px solid black;
   margin-left:auto;
   margin-right: auto;
+  height: 50px
 }
 
 .header-container > a {
-  padding: 10px 15px;
+  padding: 15px 10px 0;
   float:left;
-  color: #4FB0C6;
+  color: #18BBE8;
+  text-decoration: none;
+  font-size: 22px;
 }
 
 .welcome {
   background-size: cover;
   height: 450px;
-  background-image: url('../images/kalen-emsley-100238.jpg');
+  background-image: url('../images/South-Carolina-Flag.jpg');
+  background-position: center;
 }
-.welcome > h1 {
-  color: #348AA7;
+.welcome-headers {
+  width: 50%;
+  margin: 0 auto;
+  color: white;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.8);
+}
+.welcome-headers h1 {
+  color: white;
   font-size: 28px;
-  margin-top: 15%;
+  margin-top: 80px;
   padding-top: 0;
 }
 
@@ -85,7 +104,7 @@ ul {
 
 .drop-nav-link > a {
   text-decoration: none;
-  color: #24515B;
+  color: #18BBE8;
 }
 
 .hidden {
@@ -111,7 +130,7 @@ ul {
 }
 
 .contact-link > a {
-  color: #348AA7;
+  color: #18BBE8;
 }
 
 .about, .work, .welcome {
@@ -120,11 +139,11 @@ ul {
 }
 
 .headshot {
-  max-width: 90%;
-  height: 350px;
+  max-width: 100%;
+  /*height: 350px;*/
   border-radius: 15% 40% 15%;
   margin: 0 auto;
-  min-width: 250px;
+  /*min-width: 250px;*/
 }
 
 .about-container {
@@ -154,22 +173,22 @@ ul {
 }
 
 .project-image {
-  max-width: 95%;
+  max-width: 90%;
 }
 #frobnicator {
-  background-color: #4FB0C6;
+  background-color: #2797FF;
 }
 
 #foo-bar {
-  background-color: #367887;
+  background-color: #18BBE8;
 }
 
 #alice-bob {
-  background-color: #24515B
+  background-color: #18BBE8
 }
 
 #wibble {
-  background-color: #1B3D44;
+  background-color: #2797FF;
 }
 
 .project-stack {
@@ -182,11 +201,18 @@ ul {
 }
 
 .contact {
-  margin-top: 2em;
+  /*margin-top: 2em;*/
 }
 
 .contact > h2 {
   margin-top: 0;
+  padding-top: 0;
+}
+
+.contact-links {
+  width: 75%;
+  margin: 0 auto;
+  padding-left: 30px;
 }
 
 .linkedin {
@@ -201,7 +227,7 @@ ul {
 
 .flex-grid-triples {
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
 }
 
 .flex-grid-triples .col {
@@ -210,11 +236,11 @@ ul {
 
 @media (max-width: 905px) {
   .headshot {
-    height: 250px;
+    /*height: 250px;*/
   }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 540px) {
 
   .hamburger, .drop-nav {
     display: none;
@@ -246,10 +272,11 @@ ul {
   }
 
   .main-nav-link > a:hover{
-    border-bottom: 1px solid #348AA7;
+    /*border-bottom: 1px solid #348AA7;*/
     padding-bottom: 2px;
-    font-size: 22px;
+    /*font-size: 22px;*/
     color: #348AA7;
+    text-decoration: none;
   }
 }
 

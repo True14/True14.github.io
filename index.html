@@ -18,7 +18,8 @@
         <div class="hamburger-stripe"></div>
         <div class="hamburger-stripe"></div>
       </div>
-      <a  href="#welcome"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a>
+      <!-- <a  href="#welcome"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a> -->
+      <a  href="#welcome">Jonathan Fitzgibbon</a>
       <nav class="main-nav hidden">
         <ul>
           <li class=" main-nav-link"><a href="#about">About me</a></li>
@@ -37,22 +38,28 @@
   </header>
   <a id="welcome"></a>
   <section class="welcome">
-    <h1>Hi, I'm Jonathan!</h1>
-    <h3>Full-Stack Developer from South Carolina</h3>
+    <div class="welcome-headers">
+      <h1>Hi, I'm Jonathan!</h1>
+      <h3>A full-stack developer from South Carolina</h3>
+    </div>
   </section>
-  <hr>
+<!-- content -->
+  <main id="content">
+   <hr>
   <a id="about"></a>
   <section class="about">
     <h2>About Me</h2>
     <div class="flex-doubles">
       <figure class="col pro-odd headshot-container">
-        <img class=" headshot" src="./images/me.jpg" alt="J. Random Hacker headshot">
+          <img class=" headshot" src="./images/me_normal_400px.jpg" alt="Jonathan Fitzgibbon Headshot">
       </figure>
       <article class="col pro-even about-container">
         <p class="about-text">
           Hi, I'm Jonathan Fitzgibbon, a full-stack web developer from Columbia, South Carolina.
-          I like building web apps with React and Node.js and am always learning new things. When I'm not
-          coding I like to read, work out, and play video games.
+          I like building web apps with React and Node.js and am always eager to learn new things in regards to software/web development.
+          I'm currently sharpening my development skills while I look for work as a developer.
+          When I'm not coding I like to read books (Patrick Rothfuss is my favorite author), work out, and play video games. The current library
+          of games I'm playing includes Mario Kart 8, Nier Automata, and way too much Final Fantasy 14 Online.
         </p>
       </article>
     </div>
@@ -63,10 +70,10 @@
     <h2>My work</h2>
     <div class="flex-doubles">
       <section class="col project pro-odd" id="frobnicator">
-        <h3>USC Connect</h3>
+        <h3>Placeholder</h3>
         <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=1" alt="Frobnicator screenshot">
         <p class="project-description">
-          Senior project done for USC Connect that helps students find/log opportunities in order to graduate with leadership distinction.
+          Coming Soon.
         </p>
         <ul class="flex-grid-triples project-stack">
           <li class="col project-stack-item">
@@ -92,7 +99,7 @@
       </section>
       <section class="col project pro-even" id="foo-bar">
         <h3>Raid.io</h3>
-        <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=2" alt="FooBar screenshot">
+        <img class="project-image" src="./images/HomePageScroll.gif" alt="FooBar screenshot">
         <p class="project-description">
           Application that allows users to manage raid teams for the video game Final Fantasy XIV.
         </p>
@@ -122,7 +129,7 @@
     <div class="flex-doubles">
       <section class="col project pro-odd" id="alice-bob">
         <h3>Quiz Manager</h3>
-        <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=3" alt="AliceBob screenshot">
+        <img class="project-image" src="./images/login-screen.jpg" alt="AliceBob screenshot">
         <p class="project-description">
           Application that lets administrators manage required materials for users to take.
         </p>
@@ -207,6 +214,7 @@
   $(".drop-nav").toggleClass("hidden");
 })
 </script>
+</main>
 </body>
 
 </html>
