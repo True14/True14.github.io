@@ -194,7 +194,10 @@ ul {
 .project-stack {
   color: black;
 }
-
+.project-link {
+  display: inline-block;
+  padding-right: 10px;
+}
 .project-link > a{
   color: white;
   /*text-decoration: none;*/
@@ -212,7 +215,6 @@ ul {
 .contact-links {
   width: 75%;
   margin: 0 auto;
-  padding-left: 30px;
 }
 
 .linkedin {
@@ -224,7 +226,10 @@ ul {
 .github {
   color: #000000;
 }
-
+.contact-info li{
+  display: inline-block;
+  padding-right: 10px;
+}
 .flex-grid-triples {
   display: flex;
   /*justify-content: space-between;*/
