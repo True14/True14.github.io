@@ -10,50 +10,27 @@
 </head>
 
 <body>
-  <header>
-    <div class="header-container">
-          <!-- Hamburger button -->
-      <div class="hamburger">
-        <div class="hamburger-stripe"></div>
-        <div class="hamburger-stripe"></div>
-        <div class="hamburger-stripe"></div>
-      </div>
-      <!-- <a  href="#welcome"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a> -->
-      <a  href="#welcome">Jonathan Fitzgibbon</a>
-      <nav class="main-nav hidden">
-        <ul>
-          <li class=" main-nav-link"><a href="#about">About me</a></li>
-          <li class=" main-nav-link"><a href="#work">My work</a></li>
-          <li class=" main-nav-link"><a href="#contact">Contact me</a></li>
-        </ul>
-      </nav>
-    </div>
-    <nav class="drop-nav hidden">
+  <a id="welcome"></a>
+  <header class="welcome">
+    <h2 class="header-about">full-stack developer</h2>
+    <h1 class="name">Jonathan Fitzgibbon</h1>
+    <nav class="main-nav hidden">
       <ul>
-        <li class=" drop-nav-link"><a href="#about">About me</a></li>
-        <li class=" drop-nav-link"><a href="#work">My work</a></li>
-        <li class=" drop-nav-link"><a href="#contact">Contact me</a></li>
+        <li class=" main-nav-link"><a href="#about">About me</a></li>
+        <li class=" main-nav-link"><a href="#work">My work</a></li>
+        <li class=" main-nav-link"><a href="#contact">Contact me</a></li>
       </ul>
     </nav>
   </header>
-  <a id="welcome"></a>
-  <section class="welcome">
-    <div class="welcome-headers">
-      <h1>Hi, I'm Jonathan!</h1>
-      <h3>A full-stack developer from South Carolina</h3>
-    </div>
-  </section>
 <!-- content -->
-  <main id="content">
-   <hr>
   <a id="about"></a>
   <section class="about">
-    <h2>About Me</h2>
     <div class="flex-doubles">
       <figure class="col pro-odd headshot-container">
           <img class=" headshot" src="./images/me_normal_400px.jpg" alt="Jonathan Fitzgibbon Headshot">
       </figure>
       <article class="col pro-even about-container">
+        <h2>About Me</h2>
         <p class="about-text">
           Hi, I'm Jonathan Fitzgibbon, a full-stack web developer from Columbia, South Carolina.
           I like building web apps with React and Node.js and am always eager to learn new things in regards to software/web development.
@@ -174,7 +151,6 @@
   $(".drop-nav").toggleClass("hidden");
 })
 </script>
-</main>
 </body>
 
 </html>
