@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0 auto;
   font-family: "Helvetica", "Arial", sans-serif;
@@ -10,43 +11,10 @@ body {
   min-width: 300px;
   font-size: 16px;
 }
-/*h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1.1;
-  margin-top: 1em;
-  padding-top: 1em;
-}*/
+
 ul {
   list-style-type: none;
   padding-left: 0;
-}
-
-.header-container {
-  position: fixed;
-  top: 0px;
-  left: 0;
-  right: 0;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 0px;
-  background-color: white;
-  margin: 0 auto;
-  border-bottom: 1px solid black;
-  margin-left: auto;
-  margin-right: auto;
-  height: 50px
-}
-
-.header-container>a {
-  padding: 15px 10px 0;
-  float: left;
-  color: #18BBE8;
-  text-decoration: none;
-  font-size: 22px;
 }
 
 .welcome {
@@ -58,7 +26,7 @@ ul {
 
 .header-about {
   text-align: center;
-  font-size: 3em;
+  font-size: 1.5em;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: white;
@@ -68,14 +36,14 @@ ul {
 
 .name {
   text-align: center;
-  font-size: 7em;
+  font-size: 3em;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: white;
   text-shadow: 6px 6px grey;
 }
 
-.drop-nav {
+/*.drop-nav {
   width: 100%;
   position: fixed;
   top: 55px;
@@ -122,6 +90,39 @@ ul {
   background-color: #24515B;
   height: 3px;
   margin-bottom: 5px;
+}*/
+
+.main-nav {
+  display: block;
+  padding-top: 15px;
+  margin: auto;
+}
+
+.main-nav>ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-nav-link {
+  display: block;
+}
+
+.main-nav-link>a:hover {
+  padding-bottom: 2px;
+  color: #348AA7;
+  text-decoration: none;
+}
+
+.main-nav-link>a {
+  font-size: 1.5em;
+  text-decoration: none;
+  letter-spacing: -2px;
+  text-shadow: 2px 2px grey;
+  text-transform: uppercase;
+  color: white;
+  margin: 0 15px;
+  transition-duration: .2s;
+  display: block;
 }
 
 .contact-link>a {
@@ -133,6 +134,7 @@ ul {
   background-color: #2797FF;
   display: flex;
   flex-direction: column;
+  border-top: 1px solid black;
 }
 
 .headshot {
@@ -142,142 +144,155 @@ ul {
 }
 
 .about-container {
-  margin: 0 40px;
+  padding: 0 40px;
 }
-.about-container > h2 {
+
+.about-container>h2 {
   text-shadow: 2px 2px grey;
   text-transform: uppercase;
   font-size: 2em;
   color: white;
 }
+
 .about-text {
   color: white;
   letter-spacing: 1px;
   font-size: 1.15em;
 }
+
 .headshot-container {
   margin-top: 20px;
 }
 
-.project {
-  color: white;
-  padding-bottom: 5px;
-  max-width: 75%;
-  margin: 0 auto;
-  margin-top: 2em;
-  border-radius: 25px;
+/*css for work section*/
+.work {
+  border-top: 1px solid black;
+  background-color: #18BBE8;
+  height: 100vh;
 }
 
-.project:hover {
-  border: 1px solid black;
-  box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.2);
+.work>h2 {
+  margin-top: 10vh;
+  text-shadow: 2px 2px grey;
+  text-transform: uppercase;
+  font-size: 2em;
+  color: white;
+}
+
+/*css for project div*/
+.arrow {
+  padding-top: 30vh;
+  color: white;
+}
+
+.fa-arrow-left {
+  text-shadow: 2px 2px grey;
+}
+
+.fa-arrow-right {
+  text-shadow: -2px 2px grey;
+}
+
+.project-container {
+  width: 65vw;
+  background-color: white;
+  border: 4px solid #355D7F;
+  border-radius: 5px;
+  padding: 25px;
+  min-height: 70vh;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-around;
 }
 
 .project-image {
-  max-width: 90%;
+  height: 45%;
+  margin: 0 auto;
+  background-color: black;
 }
 
-#frobnicator {
-  background-color: #2797FF;
+.tech-stack {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 35px;
+  padding: 25px 0;
+  border-radius: 5px;
 }
 
-#foo-bar {
-  background-color: #18BBE8;
+.tech-stack img {
+  width: 10%;
+  height: 10%;
+  background-color: white;
+  border-radius: 10px;
 }
 
-#alice-bob {
-  background-color: #18BBE8
+.project-links {
+  display: flex;
+  justify-content: space-around;
 }
 
-#wibble {
-  background-color: #2797FF;
-}
-
-.project-stack {
-  color: black;
-}
-
-.project-link {
-  display: inline-block;
-  padding-right: 10px;
-}
-
-.project-link>a {
-  color: white;
+.contact {
+  height: 60vh;
+  background-color: #0E4B7F;
 }
 
 .contact>h2 {
   margin-top: 0;
-  padding-top: 0;
+  padding-top: 15vh;
+  text-shadow: 2px 2px grey;
+  text-transform: uppercase;
+  font-size: 2em;
+  color: white;
 }
 
 .contact-links {
-  width: 75%;
+  width: 75vw;
   margin: 0 auto;
 }
 
-.linkedin {
-  padding: 20px 5px 2px;
-  color: white;
-  background-color: #007bb5;
-}
-
-.github {
-  color: #000000;
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+  margin: 0 auto;
 }
 
 .contact-info li {
-  display: inline-block;
   padding-right: 10px;
 }
 
-.flex-grid-triples {
-  display: flex;
-  /*justify-content: space-between;*/
+.contact-info li>a {
+  color: white;
+  background-color: transparent;
 }
 
-.flex-grid-triples .col {
-  width: 32%;
+@media (min-width: 580px) {
+  .header-about {
+    font-size: 2.5em;
+  }
+  .name {
+    font-size: 5.5em;
+  }
 }
 
-@media (max-width: 905px) {
-  .headshot {
-    /*height: 250px;*/
+@media (min-width: 720px) {
+  .header-about {
+    font-size: 3em;
+  }
+  .name {
+    font-size: 7em;
   }
 }
 
 @media (min-width: 540px) {
-  .hamburger, .drop-nav {
+  .hamburger,
+  .drop-nav {
     display: none;
   }
-  .main-nav {
-    display: block;
-    padding-top: 15px;
-    margin: auto;
-  }
-  .main-nav>ul {
-    display: flex;
-    justify-content: space-around;
-  }
-  .main-nav-link {
-    /*float: left;*/
-    display: block;
-  }
   .main-nav-link>a {
-    text-decoration: none;
-    letter-spacing: -2px;
-    text-shadow: 2px 2px grey;
-    text-transform: uppercase;
     font-size: 2em;
-    color: white;
-    margin: 0 15px;
-    transition-duration: .2s;
-    display: block;
-  }
-  .main-nav-link>a:hover {
-    padding-bottom: 2px;
-    color: #348AA7;
-    text-decoration: none;
   }
 }
 
@@ -287,7 +302,6 @@ ul {
   }
   .headshot-container {
     background-color: #1349E8;
-    height: 100vh;
     margin: 0;
     padding-right: 5vw;
     padding-left: 5vw;
@@ -295,10 +309,7 @@ ul {
   .headshot {
     margin-top: 25vh;
   }
-  .about-container {
-    height: 100vh;
-  }
-  .about-container > h2 {
+  .about-container>h2 {
     margin-top: 25vh;
   }
   .about-text {
@@ -323,7 +334,8 @@ ul {
     margin-left: auto;
     margin-right: auto;
   }
-  .headshot-container, .about-container {
+  .headshot-container,
+  .about-container {
     width: 50vw;
   }
 }
