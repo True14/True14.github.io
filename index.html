@@ -12,9 +12,9 @@
 <body>
   <a id="welcome"></a>
   <header class="welcome">
-    <h2 class="header-about">full-stack developer</h2>
     <h1 class="name">Jonathan Fitzgibbon</h1>
-    <nav class="main-nav hidden">
+    <h2 class="header-about">full-stack developer</h2>
+    <nav class="main-nav">
       <ul>
         <li class=" main-nav-link"><a href="#about">About me</a></li>
         <li class=" main-nav-link"><a href="#work">My work</a></li>
@@ -22,7 +22,7 @@
       </ul>
     </nav>
   </header>
-<!-- content -->
+  <!-- content -->
   <a id="about"></a>
   <section class="about">
     <figure class="headshot-container">
@@ -31,95 +31,22 @@
     <article class="about-container">
       <h2>About Me</h2>
       <p class="about-text">
-        Hi, I'm Jonathan Fitzgibbon, a full-stack web developer from Columbia, South Carolina.
-        I like building web apps with React and Node.js and am always eager to learn new things in regards to software/web development.
-        I'm currently sharpening my development skills while I look for work as a developer.
-        When I'm not coding I like to read books (Patrick Rothfuss is my favorite author), work out, and play video games. The current library
-        of games I'm playing includes Mario Kart 8, Nier Automata, and way too much Final Fantasy 14 Online.
+        Hi, I'm Jonathan Fitzgibbon, a full-stack web developer from Columbia, South Carolina. I like building web apps with React and Node.js and am always eager to learn new things in regards to software/web development. I'm currently sharpening my development
+        skills while I look for work as a developer. When I'm not coding I like to read books (Patrick Rothfuss is my favorite author), work out, and play video games. The current library of games I'm playing includes Mario Kart 8, Nier Automata, and
+        way too much Final Fantasy 14 Online.
       </p>
     </article>
   </section>
   <a id="work"></a>
   <section class="work">
     <h2>My work</h2>
-    <div class="flex-doubles">
-      <section class="col project pro-odd" id="frobnicator">
-        <h3>Placeholder</h3>
-        <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=1" alt="Frobnicator screenshot">
-        <p class="project-description">
-          Coming Soon.
-        </p>
-        <h4>Skills: Android, Java, SQL</h4>
-        <nav class="project-links">
-          <ul>
-            <li class="project-link project-link-live">
-              <a href="https://sccapstone.github.io/USCConnect/" target="_blank">Live demo</a>
-            </li>
-            <li class="project-link project-link-github">
-              <a href="https://github.com/SCCapstone/USCConnect" target="_blank">Source code</a>
-            </li>
-          </ul>
-        </nav>
-      </section>
-      <section class="col project pro-even" id="foo-bar">
-        <h3>Raid.io</h3>
-        <img class="project-image" src="./images/HomePageScroll.gif" alt="FooBar screenshot">
-        <p class="project-description">
-          Application that allows users to manage raid teams for the video game Final Fantasy XIV.
-        </p>
-        <h4>Skills: JQuery, Node.js</h4>
-        <nav class="project-links">
-          <ul>
-            <li class="project-link project-link-live">
-              <a href="https://thomas-jonathan-capstone.herokuapp.com/#" target="_blank">Live demo</a>
-            </li>
-            <li class="project-link project-link-github">
-              <a href="https://github.com/thinkful-c11/thomas-jonathan-fullstack-capstone" target="_blank">Source code</a>
-            </li>
-          </ul>
-        </nav>
-      </section>
+    <div class="projects">
+      <i class="fa fa-arrow-left fa-4x arrow" aria-hidden="true"></i>
+      <div class="project-container">
+      </div>
+      <i class="fa fa-arrow-right fa-4x arrow" aria-hidden="true"></i>
     </div>
-    <div class="flex-doubles">
-      <section class="col project pro-odd" id="alice-bob">
-        <h3>Quiz Manager</h3>
-        <img class="project-image" src="./images/login-screen.jpg" alt="AliceBob screenshot">
-        <p class="project-description">
-          Application that lets administrators manage required materials for users to take.
-        </p>
-        <h4>Skills: React, Redux, Node.js</h4>
-        <nav class="project-links">
-          <ul>
-            <li class="project-link project-link-live">
-              <a href="https://guiz-manager.herokuapp.com/" target="_blank">Live demo</a>
-            </li>
-            <li class="project-link project-link-github">
-              <a href="https://github.com/True14/jonathan-paton-quiz-fullstack" target="_blank">Source code</a>
-            </li>
-          </ul>
-        </nav>
-      </section>
-      <section class="col project pro-even" id="wibble">
-        <h3>Coming Soon</h3>
-        <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=4" alt="Wibble screenshot">
-        <p class="project-description">
-          This is where a fourth project will go!
-        </p>
-        <h4>Skills: React, Redux, Node.js</h4>
-        <nav class="project-links">
-          <ul class='code-list'>
-            <li class="project-link project-link-live">
-              <a href="#">Live demo</a>
-            </li>
-            <li class="project-link project-link-github">
-              <a href="#">Source code</a>
-            </li>
-          </ul>
-        </nav>
-      </section>
   </section>
-  </div>
-  <hr>
   <a id="contact"></a>
   <section class="contact">
     <h2>Contact me</h2>
@@ -127,27 +54,24 @@
       <ul class="contact-info">
         <li class="col">
           <a class="email" href="mailto:jonnyfitzgib@gmail.com" target='_blank'>
-            <i class="fa fa-envelope fa-2x contact-link contact-link-email"></i>
+            <i class="fa fa-envelope-square fa-3x contact-link contact-link-email"></i>
           </a>
         </li>
         <li class="col">
           <a class="linkedin" href="https://www.linkedin.com/in/jonathan-fitzgibbon-3433baa1/" target='_blank'>
-            <i class="fa fa-linkedin fa-2x contact-link contact-link-linkedin"></i>
+            <i class="fa fa-linkedin-square fa-3x contact-link contact-link-linkedin"></i>
           </a>
         </li>
         <li class="col">
           <a class="github" href="https://www.github.com/True14" target='_blank'>
-            <i class=" fa fa-github fa-2x contact-link contact-link-github"></i>
+            <i class=" fa fa-github-square fa-3x contact-link contact-link-github"></i>
           </a>
         </li>
       </ul>
     </nav>
   </section>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script> $(".hamburger").click(function() {
-  $(".drop-nav").toggleClass("hidden");
-})
-</script>
+  <script src="./js/app.js"></script>
 </body>
 
 </html>
