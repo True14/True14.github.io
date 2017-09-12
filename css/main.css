@@ -18,7 +18,7 @@ ul {
 }
 
 .welcome {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #18BBE8;
   display: flex;
   flex-direction: column;
@@ -130,7 +130,7 @@ ul {
 }
 
 .about {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #2797FF;
   display: flex;
   flex-direction: column;
@@ -165,10 +165,14 @@ ul {
 }
 
 /*css for work section*/
+.work,
+.about {
+  padding-bottom: 10vh;
+}
 .work {
   border-top: 1px solid black;
   background-color: #18BBE8;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .work>h2 {
@@ -194,12 +198,12 @@ ul {
 }
 
 .project-container {
-  width: 65vw;
+  width: 65%;
   background-color: white;
   border: 4px solid #355D7F;
   border-radius: 5px;
   padding: 25px;
-  min-height: 70vh;
+  max-height: 70%;
 }
 
 .projects {
@@ -208,7 +212,8 @@ ul {
 }
 
 .project-image {
-  height: 45%;
+  min-height: 300px;
+  max-width: 600px;
   margin: 0 auto;
   background-color: black;
 }
@@ -234,7 +239,7 @@ ul {
 }
 
 .contact {
-  height: 60vh;
+  min-height: 60vh;
   background-color: #0E4B7F;
 }
 
