@@ -96,6 +96,7 @@ ul {
   display: block;
   /*padding-top: 15px;*/
   margin: auto;
+  width: 100%
 }
 
 .main-nav>ul {
@@ -286,7 +287,7 @@ ul {
     font-size: 2.5em;
   }
   .name {
-    font-size: 5.5em;
+    font-size: 3.5em;
   }
 }
 
@@ -321,9 +322,6 @@ ul {
   .header-about {
     font-size: 3em;
   }
-  .name {
-    font-size: 7em;
-  }
 }
 
 @media (min-width: 760px) {
@@ -349,6 +347,12 @@ ul {
   }
 }
 
+@media (min-width: 894px) {
+  .name {
+    font-size: 4.5em;
+  }
+}
+
 @media (min-width: 1000px) {
   .project-container {
     width: 65%;
@@ -356,4 +360,18 @@ ul {
   .about-text {
     font-size: 1.5em;
   }
+  .main-nav-link>a {
+    font-size: 2em;
+  }
+
+@media (min-width: 1085px) {
+  .name {
+    font-size: 5.5em;
+  }
+
+@media (min-width: 1400px) {
+  .name {
+    font-size: 7em;
+  }
+}
 }
