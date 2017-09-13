@@ -182,8 +182,11 @@ ul {
 }
 
 /*css for project div*/
-.arrow {
+.arrow-container {
   padding-top: 30vh;
+}
+.arrow {
+  /*padding-top: 30vh;*/
   color: white;
 }
 
