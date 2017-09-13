@@ -31,7 +31,7 @@ ul {
   text-transform: uppercase;
   color: white;
   text-shadow: 2px 2px grey;
-  margin-bottom: 13vh;
+  /*margin-bottom: 13vh;*/
 }
 
 .name {
@@ -94,7 +94,7 @@ ul {
 
 .main-nav {
   display: block;
-  padding-top: 15px;
+  /*padding-top: 15px;*/
   margin: auto;
 }
 
@@ -165,14 +165,11 @@ ul {
 }
 
 /*css for work section*/
-/*.work,
-.about {
-  padding-bottom: 10vh;
-}*/
 .work {
   border-top: 1px solid black;
   background-color: #18BBE8;
   min-height: 100vh;
+  padding-bottom: 10px;
 }
 
 .work>h2 {
@@ -189,6 +186,10 @@ ul {
   color: white;
 }
 
+.arrow-container {
+  display: none;
+}
+
 .fa-arrow-left {
   text-shadow: 2px 2px grey;
 }
@@ -198,7 +199,8 @@ ul {
 }
 
 .project-container {
-  width: 65%;
+  height: 80vh;
+  width: 90%;
   background-color: white;
   border: 4px solid #355D7F;
   border-radius: 5px;
@@ -216,14 +218,6 @@ ul {
   max-width: 600px;
   margin: 0 auto;
   background-color: black;
-}
-
-.tech-stack {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 35px;
-  padding: 25px 0;
-  border-radius: 5px;
 }
 
 .tech-stack img {
@@ -260,7 +254,7 @@ ul {
 .contact-info {
   display: flex;
   justify-content: space-around;
-  width: 400px;
+  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -273,22 +267,8 @@ ul {
   background-color: transparent;
 }
 
-@media (min-width: 580px) {
-  .header-about {
-    font-size: 2.5em;
-  }
-  .name {
-    font-size: 5.5em;
-  }
-}
-
-@media (min-width: 720px) {
-  .header-about {
-    font-size: 3em;
-  }
-  .name {
-    font-size: 7em;
-  }
+.hidden {
+  display: none;
 }
 
 @media (min-width: 540px) {
@@ -296,8 +276,17 @@ ul {
   .drop-nav {
     display: none;
   }
-  .main-nav-link>a {
+  /*.main-nav-link>a {
     font-size: 2em;
+  }*/
+}
+
+@media (min-width: 580px) {
+  .header-about {
+    font-size: 2.5em;
+  }
+  .name {
+    font-size: 5.5em;
   }
 }
 
@@ -322,25 +311,49 @@ ul {
     margin-top: 15%;
     font-size: 1.15em;
   }
-  .project {
-    max-width: 45%;
-  }
-  .pro-odd {
-    margin-left: auto;
-    margin-right: 1em;
-  }
-  .pro-even {
-    margin-right: auto;
-    margin-left: 1em;
-  }
-  .flex-doubles {
-    display: flex;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-  }
   .headshot-container,
   .about-container {
     width: 50vw;
+  }
+}
+
+@media (min-width: 720px) {
+  .header-about {
+    font-size: 3em;
+  }
+  .name {
+    font-size: 7em;
+  }
+}
+
+@media (min-width: 760px) {
+  .arrow-container {
+    display: block;
+    margin: 0 15px;
+  }
+  .hidden {
+    display: block;
+  }
+  .tech-stack {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+    padding: 25px 0;
+    border-radius: 5px;
+  }
+  .about-text {
+    font-size: 1.25em;
+  }
+  .project-container {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .project-container {
+    width: 65%;
+  }
+  .about-text {
+    font-size: 1.5em;
   }
 }

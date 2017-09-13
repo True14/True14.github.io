@@ -48,8 +48,8 @@ const renderProject = (state, element) => {
   });
   element.html(`<h3 class="project-title">${state.projects[pos].title}</h3>
           <p class="project-description">${state.projects[pos].description}</p>
-          <div class="project-image"></div>
-          <div class="tech-stack">
+          <div class="project-image hidden"></div>
+          <div class="tech-stack hidden">
             ${images}
           </div>
           <ul class='project-links'>
@@ -79,13 +79,13 @@ const evenListeners = (state) => {
   $('.fa-arrow-right').on('click', () => {
     rotateRight(state);
   });
-  $('.fa-arrow-right').on('swiperight', () => {
+  $('.projects').on('swiperight', () => {
     rotateRight(state);
   });
   $('.fa-arrow-left').on('click', () => {
     rotateLeft(state);
   });
-  $('.fa-arrow-left').on('swipeleft', () => {
+  $('.projects').on('swipeleft', () => {
     rotateLeft(state);
   });
   $('.hamburger').click(() => {
