@@ -4,6 +4,7 @@ const appState = {
     title: 'Frenchatize Me',
     description: 'A French language learning tool that uses spaced repetition to help ' +
         'learn 10 French vocabulary words',
+    screenShot: './images/frenchatize.png',
     tech: ['./images/mongo-icon.png', './images/react-icon.png', './images/redux-icon.png', './images/nodejs-icon.png'],
     links: {
       live: 'https://frenchatize.herokuapp.com/',
@@ -13,6 +14,7 @@ const appState = {
   {
     title: 'Quiz Manager',
     description: 'Application that lets administrators manage required materials for users to take.',
+    screenShot: './images/login-screen.png',
     tech: ['./images/mongo-icon.png', './images/react-icon.png', './images/redux-icon.png', './images/nodejs-icon.png'],
     links: {
       live: 'https://guiz-manager.herokuapp.com/',
@@ -22,6 +24,7 @@ const appState = {
   {
     title: 'Book-Thing.IO',
     description: 'A community driven, book recommendation application. Users can create lists of their favorite books and have others recommended to them.',
+    screenShot: './images/login.png',
     tech: ['./images/mocha-chai-icon.png', './images/postgresqldb-icon.png', './images/react-icon.png', './images/redux-icon.png', './images/nodejs-icon.png'],
     links: {
       live: 'https://frenchatize.herokuapp.com/',
@@ -31,6 +34,7 @@ const appState = {
   {
     title: 'Coming Soon',
     description: 'This is where a fourth projce will go. Stay tuned!',
+    screenShot: '',
     tech: [],
     links: {
       live: '#',
@@ -48,7 +52,9 @@ const renderProject = (state, element) => {
   });
   element.html(`<h3 class="project-title">${state.projects[pos].title}</h3>
           <p class="project-description">${state.projects[pos].description}</p>
-          <div class="project-image hidden"></div>
+          <div class="project-image hidden">
+            <img src="${state.projects[pos].screenShot}">
+          </div>
           <div class="tech-stack hidden">
             ${images}
           </div>
