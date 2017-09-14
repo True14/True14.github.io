@@ -183,15 +183,16 @@ ul {
 
 /*css for project div*/
 .arrow-container {
+  display: none;
   padding-top: 30vh;
 }
 .arrow {
-  /*padding-top: 30vh;*/
   color: white;
 }
 
-.arrow-container {
-  display: none;
+.arrow-container-small {
+  display:flex;
+  justify-content: space-around;
 }
 
 .fa-arrow-left {
@@ -328,6 +329,9 @@ ul {
 }
 
 @media (min-width: 760px) {
+  .arrow-container-small {
+    display: none;
+  }
   .arrow-container {
     display: block;
     margin: 0 15px;

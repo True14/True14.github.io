@@ -79,17 +79,8 @@ const evenListeners = (state) => {
   $('.fa-arrow-right').on('click', () => {
     rotateRight(state);
   });
-  $('.projects').on('swiperight', () => {
-    rotateRight(state);
-  });
   $('.fa-arrow-left').on('click', () => {
     rotateLeft(state);
-  });
-  $('.projects').on('swipeleft', () => {
-    rotateLeft(state);
-  });
-  $('.hamburger').click(() => {
-    $('.drop-nav').toggleClass('hidden');
   });
 };
 
