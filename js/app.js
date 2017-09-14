@@ -33,7 +33,7 @@ const appState = {
   },
   {
     title: 'Coming Soon',
-    description: 'This is where a fourth projce will go. Stay tuned!',
+    description: 'This is where another project will go. Stay tuned!',
     screenShot: './images/coming_soon.png',
     tech: [],
     links: {
