@@ -155,10 +155,15 @@ ul {
   color: white;
 }
 
+.about-text-container {
+  margin-bottom: 30px;
+}
+
 .about-text {
   color: white;
   letter-spacing: 1px;
   font-size: 1.15em;
+  margin: 10px auto;
 }
 
 .headshot-container {
@@ -318,7 +323,7 @@ ul {
   }
   .about-text {
     letter-spacing: 1px;
-    margin-top: 15%;
+    margin-top: 5%;
     font-size: 1.15em;
   }
   .headshot-container,
