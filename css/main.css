@@ -18,7 +18,6 @@ ul {
 }
 
 .welcome {
-  min-height: 100vh;
   background-color: #18BBE8;
   display: flex;
   flex-direction: column;
@@ -26,75 +25,25 @@ ul {
 
 .header-about {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.25em;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: white;
-  text-shadow: 2px 2px grey;
-  /*margin-bottom: 13vh;*/
+  text-shadow: 1px 1px grey;
 }
 
 .name {
   text-align: center;
-  font-size: 3em;
+  font-size: 1.5em;
+  margin-bottom: 10px;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: white;
-  text-shadow: 6px 6px grey;
+  text-shadow: 2px 2px grey;
 }
-
-/*.drop-nav {
-  width: 100%;
-  position: fixed;
-  top: 55px;
-  left: 0;
-  background-color: white;
-}
-
-.drop-nav>ul {
-  float: left;
-  width: 100%;
-  margin-top: 8px;
-}
-
-.drop-nav-link {
-  border-bottom: 1px solid black;
-  padding-left: 10px;
-  text-align: left;
-  margin-bottom: 8px;
-  padding-bottom: 8px;
-}
-
-.drop-nav-link>a {
-  text-decoration: none;
-  color: #18BBE8;
-}
-
-.hidden {
-  display: none;
-}
-
-.hamburger {
-  width: 25px;
-  height: 20px;
-  border: 1px solid #eeeeef;
-  border-radius: 2px;
-  box-shadow: 0 0 2px #eeeeef;
-  padding: 10px 10px;
-  position: absolute;
-  top: 5px;
-  right: 10px;
-}
-
-.hamburger-stripe {
-  background-color: #24515B;
-  height: 3px;
-  margin-bottom: 5px;
-}*/
 
 .main-nav {
   display: block;
-  /*padding-top: 15px;*/
   margin: auto;
   width: 100%
 }
@@ -114,11 +63,10 @@ ul {
   text-decoration: none;
 }
 
-.main-nav-link>a {
-  font-size: 1.5em;
+.main-nav-link > a {
+  font-size: 1em;
   text-decoration: none;
   letter-spacing: -2px;
-  text-shadow: 2px 2px grey;
   text-transform: uppercase;
   color: white;
   margin: 0 15px;
@@ -131,7 +79,6 @@ ul {
 }
 
 .about {
-  min-height: 100vh;
   background-color: #2797FF;
   display: flex;
   flex-direction: column;
@@ -148,10 +95,10 @@ ul {
   padding: 0 40px;
 }
 
-.about-container>h2 {
-  text-shadow: 2px 2px grey;
+.about-container > h2 {
+  text-shadow: 1px 1px grey;
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 1.5em;
   color: white;
 }
 
@@ -162,7 +109,7 @@ ul {
 .about-text {
   color: white;
   letter-spacing: 1px;
-  font-size: 1.15em;
+  font-size: 1em;
   margin: 10px auto;
 }
 
@@ -174,15 +121,14 @@ ul {
 .work {
   border-top: 1px solid black;
   background-color: #18BBE8;
-  min-height: 100vh;
   padding-bottom: 10px;
 }
 
-.work>h2 {
-  margin-top: 10vh;
-  text-shadow: 2px 2px grey;
+.work > h2 {
+  margin-top: 25px;
+  text-shadow: 1px 1px grey;
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 1.5em;
   color: white;
 }
 
@@ -201,15 +147,15 @@ ul {
 }
 
 .fa-arrow-left {
-  text-shadow: 2px 2px grey;
+  text-shadow: 1px 1px grey;
 }
 
 .fa-arrow-right {
-  text-shadow: -2px 2px grey;
+  text-shadow: -1px 1px grey;
 }
 
 .project-container {
-  min-height: 60vh;
+  min-height: 60%;
   width: 90%;
   background-color: white;
   border: 4px solid #355D7F;
@@ -227,7 +173,6 @@ ul {
   min-height: 300px;
   max-width: 600px;
   margin: 0 auto;
-  /*background-color: black;*/
 }
 .project-image img {
   width: 100%;
@@ -248,21 +193,20 @@ ul {
 }
 
 .contact {
-  min-height: 60vh;
+  padding: 25px 0;
   background-color: #0E4B7F;
 }
 
 .contact>h2 {
   margin-top: 0;
-  padding-top: 15vh;
-  text-shadow: 2px 2px grey;
+  text-shadow: 1px 1px grey;
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 1.5em;
   color: white;
 }
 
 .contact-links {
-  width: 75vw;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -291,17 +235,14 @@ ul {
   .drop-nav {
     display: none;
   }
-  /*.main-nav-link>a {
-    font-size: 2em;
-  }*/
 }
 
 @media (min-width: 580px) {
   .header-about {
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
   .name {
-    font-size: 3.5em;
+    font-size: 2.5em;
   }
 }
 
@@ -316,15 +257,16 @@ ul {
     padding-left: 5vw;
   }
   .headshot {
-    margin-top: 25vh;
+    margin-top: 25%;
+    margin-bottom: 25%;
   }
-  .about-container>h2 {
-    margin-top: 25vh;
+  .about-container > h2 {
+    margin-top: 25%;
   }
   .about-text {
     letter-spacing: 1px;
     margin-top: 5%;
-    font-size: 1.15em;
+    font-size: 1em;
   }
   .headshot-container,
   .about-container {
@@ -334,7 +276,7 @@ ul {
 
 @media (min-width: 720px) {
   .header-about {
-    font-size: 3em;
+    font-size: 1.5em;
   }
 }
 
@@ -357,16 +299,16 @@ ul {
     border-radius: 5px;
   }
   .about-text {
-    font-size: 1.25em;
+    font-size: 1em;
   }
   .project-container {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 }
 
 @media (min-width: 894px) {
   .name {
-    font-size: 4.5em;
+    font-size: 3.5em;
   }
 }
 
@@ -375,20 +317,20 @@ ul {
     width: 65%;
   }
   .about-text {
-    font-size: 1.5em;
+    font-size: 1em;
   }
   .main-nav-link>a {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
 @media (min-width: 1085px) {
   .name {
-    font-size: 5.5em;
+    font-size: 4.5em;
   }
 
 @media (min-width: 1400px) {
   .name {
-    font-size: 7em;
+    font-size: 5.5em;
   }
 }
 }
