@@ -308,6 +308,12 @@ ul {
     font-size: 4.5em;
   }
 
+@media (min-width: 1300px) {
+  .project-container {
+    width: 40%;
+  }
+}
+
 @media (min-width: 1400px) {
   .name {
     font-size: 5.5em;
