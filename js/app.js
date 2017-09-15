@@ -81,7 +81,22 @@ const renderProject = (state, element) => {
 
   element.html(projects);
 };
+const scroll = (link, destination) => {
+  $(link).click(() => {
+    const path = $(destination).offset().top;
+    $('body').animate({
+      scrollTop: path
+    }, 1000);
+  });
+};
+
+const evenListeners = () => {
+  scroll('.about-page-link', '.about');
+  scroll('.work-page-link', '.work');
+  scroll('.contact-page-link', '.contact');
+};
 
 $().ready(() => {
   renderProject(appState, $('.projects'));
+  evenListeners();
 });
