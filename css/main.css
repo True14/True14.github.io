@@ -58,7 +58,6 @@ ul {
 }
 
 .main-nav-link>a:hover {
-  padding-bottom: 2px;
   color: #348AA7;
   text-decoration: none;
 }
