@@ -45,52 +45,43 @@ const appState = {
 };
 
 const renderProject = (state, element) => {
-  const pos = state.position;
-  let images = '';
-  state.projects[pos].tech.forEach(image => {
-    images += `<img src="${image}" alt="">`;
+  let projects = '';
+  let pos = 0;
+  state.projects.forEach(project => {
+    let images = '';
+    project.tech.forEach(image => {
+      images += `<img src="${image}" alt="">`;
+    });
+    if (!(pos % 2)) {
+      projects += '<div class="project-row">';
+    }
+    projects += `<div class="project-container">
+      <h3 class="project-title">${project.title}</h3>
+      <p class="project-description">${project.description}</p>
+      <div class="project-image">
+        <img src="${project.screenShot}">
+      </div>
+      <div class="tech-stack">
+        ${images}
+      </div>
+      <ul class='project-links'>
+        <li>
+          <a class='view-live-js' href="${project.links.live}">Live Version</a>
+        </li>
+        <li>
+          <a class='view-source-js' href="${project.links.source}">Source Code</a>
+        </li>
+      </ul>
+    </div>`;
+    if (pos % 2) {
+      projects += '</div>';
+    }
+    pos++;
   });
-  element.html(`<h3 class="project-title">${state.projects[pos].title}</h3>
-          <p class="project-description">${state.projects[pos].description}</p>
-          <div class="project-image hidden">
-            <img src="${state.projects[pos].screenShot}">
-          </div>
-          <div class="tech-stack hidden">
-            ${images}
-          </div>
-          <ul class='project-links'>
-            <li>
-              <a class='view-live-js' href="${state.projects[pos].links.live}">Live Version</a>
-            </li>
-            <li>
-              <a class='view-source-js' href="${state.projects[pos].links.source}">Source Code</a>
-            </li>
-          </ul>`);
-};
-const rotateLeft = (state) => {
-  if (state.position) {
-    state.position--;
-    renderProject(state, $('.project-container'));
-  }
-};
 
-const rotateRight = (state) => {
-  if (state.position < state.projects.length - 1) {
-    state.position++;
-    renderProject(state, $('.project-container'));
-  }
-};
-
-const evenListeners = (state) => {
-  $('.fa-arrow-right').on('click', () => {
-    rotateRight(state);
-  });
-  $('.fa-arrow-left').on('click', () => {
-    rotateLeft(state);
-  });
+  element.html(projects);
 };
 
 $().ready(() => {
-  renderProject(appState, $('.project-container'));
-  evenListeners(appState);
+  renderProject(appState, $('.projects'));
 });
