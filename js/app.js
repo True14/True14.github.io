@@ -27,8 +27,8 @@ const appState = {
     screenShot: './images/login.png',
     tech: ['./images/mocha-chai-icon.png', './images/postgresqldb-icon.png', './images/react-icon.png', './images/redux-icon.png', './images/nodejs-icon.png'],
     links: {
-      live: 'https://frenchatize.herokuapp.com/',
-      source: 'https://github.com/True14/Francais-Normalisation'
+      live: 'https://book-thing.herokuapp.com/',
+      source: 'https://github.com/thinkful-c11/book-thing.io'
     }
   },
   {
