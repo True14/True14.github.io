@@ -32,13 +32,13 @@ const appState = {
     }
   },
   {
-    title: 'Coming Soon',
-    description: 'This is where another project will go. Stay tuned!',
-    screenShot: './images/coming_soon.png',
-    tech: [],
+    title: 'RoboFriends',
+    description: 'Simple search application used to keep those Redux skills from rusting.',
+    screenShot: './images/robofriends.png',
+    tech: ['./images/react-icon.png', './images/redux-icon.png'],
     links: {
-      live: '#',
-      source: '#'
+      live: 'https://www.jonnyfitzgibbon.com/robofriends/',
+      source: 'https://github.com/thinkful-c11/robofriends'
     }
   }],
   position: 0
