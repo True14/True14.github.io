@@ -1,6 +1,5 @@
 'use strict';
-const appState = {
-  projects: [{
+const unusedProjects = [{
     title: 'Frenchatize Me',
     description: 'A French language learning tool that uses spaced repetition to help ' +
         'learn 10 French vocabulary words',
@@ -8,7 +7,7 @@ const appState = {
     tech: ['./images/mongo-icon.png', './images/react-icon.png', './images/redux-icon.png', './images/nodejs-icon.png'],
     links: {
       live: 'https://frenchatize.herokuapp.com/',
-      source: 'https://github.com/True14/Francais-Normalisation'
+      source: 'https://github.com/fitzykins/Francais-Normalisation'
     }
   },
   {
@@ -18,9 +17,11 @@ const appState = {
     tech: ['./images/mongo-icon.png', './images/react-icon.png', './images/redux-icon.png', './images/nodejs-icon.png'],
     links: {
       live: 'https://guiz-manager.herokuapp.com/',
-      source: 'https://github.com/True14/jonathan-paton-quiz-fullstack'
+      source: 'https://github.com/fitzykins/jonathan-paton-quiz-fullstack'
     }
-  },
+  }]
+const appState = {
+  projects: [
   {
     title: 'Book-Thing.IO',
     description: 'A community driven, book recommendation application. Users can create lists of their favorite books and have others recommended to them.',
@@ -38,7 +39,7 @@ const appState = {
     tech: ['./images/react-icon.png', './images/redux-icon.png'],
     links: {
       live: 'https://www.jonnyfitzgibbon.com/robofriends/',
-      source: 'https://github.com/thinkful-c11/robofriends'
+      source: 'https://github.com/fitzykins/robofriends'
     }
   }],
   position: 0
@@ -81,10 +82,12 @@ const renderProject = (state, element) => {
 
   element.html(projects);
 };
+
 const scroll = (link, destination) => {
-  $(link).click(() => {
+
+  $(link).click(function() {
     const path = $(destination).offset().top;
-    $('body').animate({
+    $('html,body').animate({
       scrollTop: path
     }, 1000);
   });

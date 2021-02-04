@@ -17,6 +17,11 @@ ul {
   padding-left: 0;
 }
 
+/* .helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+} */
 .welcome {
   background-color: #18BBE8;
   display: flex;
@@ -26,6 +31,7 @@ ul {
 .header-about {
   text-align: center;
   font-size: 1.25em;
+  white-space: nowrap;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: white;
@@ -78,6 +84,7 @@ ul {
 }
 
 .about {
+  min-height: 500px;
   background-color: #2797FF;
   display: flex;
   flex-direction: column;
@@ -85,9 +92,15 @@ ul {
 }
 
 .headshot {
-  max-width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 75%;
+  max-height: 85%;
   border-radius: 15% 40% 15%;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .about-container {
@@ -113,7 +126,8 @@ ul {
 }
 
 .headshot-container {
-  margin-top: 20px;
+  position: relative;
+  min-height: 300px;
 }
 
 /*css for work section*/
@@ -249,12 +263,8 @@ ul {
     background-color: #1349E8;
     margin: 0;
   }
-  .headshot {
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
   .about-container > h2 {
-    margin-top: 10%;
+    margin-top: 100px;
   }
   .about-text {
     letter-spacing: 1px;
@@ -301,11 +311,13 @@ ul {
   .main-nav-link>a {
     font-size: 1.5em;
   }
+}
 
 @media (min-width: 1085px) {
   .name {
     font-size: 4.5em;
   }
+}
 
 @media (min-width: 1300px) {
   .project-container {
@@ -317,5 +329,4 @@ ul {
   .name {
     font-size: 5.5em;
   }
-}
 }
